@@ -1,6 +1,7 @@
 *{
     margin: 0%;
     padding: 0%;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     font-family: 'Ubuntu', sans-serif;
 }
@@ -11,7 +12,12 @@ html,body{
 #main{
     position: relative;
     overflow: hidden;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
 }
 #page{
@@ -25,13 +31,21 @@ html,body{
     position: absolute;
     right: 1%;
     top: 60%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
     transform: translateY(-50%);
     width: 50%;
     height: 100vh;
 }
 #page>#nav{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     padding: 0px 30px;
     position: absolute;
@@ -45,6 +59,8 @@ html,body{
     height: 85px;
 }
 #center-nav{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     gap: 20px;
 }
@@ -83,6 +99,8 @@ html,body{
 }
 #text>h5{
     color: #8873EF;
+    -webkit-transform: rotate(-22deg);
+    -ms-transform: rotate(-22deg);
     transform: rotate(-22deg);
     position: absolute;
     left: 3%;
@@ -121,12 +139,20 @@ html,body{
     right: 10%;
     height: 90%;
     top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
     transform: translateY(-50%);
     width: 35%;
 }
 #left>.box{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     padding: 0px 20px;
     height: 33.3%;
@@ -140,8 +166,14 @@ html,body{
     font-size: 38px;
 }
 .circle{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     height: 3vw;
     width: 3vw;
@@ -174,6 +206,8 @@ html,body{
 }
 #text1>h5{
     color: #8873EF;
+    -webkit-transform: rotate(-22deg);
+    -ms-transform: rotate(-22deg);
     transform: rotate(-22deg);
     position: absolute;
     left: -2%;
@@ -192,13 +226,21 @@ html,body{
     background-color: #fff;
 }
 #project{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     height: 50%;
     width: 90%;
     position: absolute;
     left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
     transform: translateX(-50%);
     bottom: 5%;
 }
@@ -208,8 +250,14 @@ html,body{
     width: 31%;
 }
 #text3{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     padding: 0px 20px;
     height: 30%;
@@ -223,6 +271,7 @@ html,body{
 #image>img{
     height: 100%;
     width: 100%;
+    -o-object-fit: fill;
     object-fit: fill;
 }
 .p2{
@@ -246,14 +295,22 @@ html,body{
 }
 #text4>h5{
     color: #8873EF;
+    -webkit-transform: rotate(-20deg);
+    -ms-transform: rotate(-20deg);
     transform: rotate(-20deg);
     position: absolute;
     top: 0%;
     left: -8%;
 }
 #page3{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     padding: 0px 60px;
     position: relative;
@@ -275,9 +332,17 @@ html,body{
 .line{
     position: absolute;
     top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
     transform: translateY(-50%);
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     padding: 0px 30px;
     height: 10%;
@@ -293,7 +358,11 @@ html,body{
     width: 65%;
     border-bottom: 2px solid #000;
     position: absolute;
+    -webkit-transform: rotate(15deg);
+    -ms-transform: rotate(15deg);
     transform: rotate(15deg);
+    -webkit-transform-origin: left;
+    -ms-transform-origin: left;
     transform-origin: left;
 }
 .c1{
@@ -314,6 +383,8 @@ html,body{
 }
 #text5>h5{
     color: #8873EF;
+    -webkit-transform: rotate(-20deg);
+    -ms-transform: rotate(-20deg);
     transform: rotate(-20deg);
     position: absolute;
     top: 0%;
@@ -325,7 +396,11 @@ html,body{
     width: 100%;
 }
 .infos{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     gap: 20px;
     padding-left: 20px;
